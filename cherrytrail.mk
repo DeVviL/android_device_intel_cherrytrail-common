@@ -47,6 +47,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
 
+# Setup hwui configs
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
+
 # Display
 ADDITIONAL_DEFAULT_PROPERTIES += \
     intel.hwc.autovideoddr=1 \
