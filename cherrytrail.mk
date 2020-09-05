@@ -40,12 +40,12 @@ PRODUCT_PACKAGES += \
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=144m \
-    dalvik.vm.heapsize=384m \
-    dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapmaxfree=8m
+    dalvik.vm.heapstartsize=16m \
+    dalvik.vm.heapgrowthlimit=384m \
+    dalvik.vm.heapsize=1024m \
+    dalvik.vm.heaptargetutilization=0.5 \
+    dalvik.vm.heapminfree=8m \
+    dalvik.vm.heapmaxfree=32m
 
 # Setup hwui configs
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
